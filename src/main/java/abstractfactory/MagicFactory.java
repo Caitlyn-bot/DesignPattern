@@ -1,0 +1,22 @@
+package abstractfactory;
+
+/**
+ * @author 张志伟
+ * @version v1.0
+ */
+public class MagicFactory extends AbstractFactory{
+    @Override
+    Food createFood() {
+        return new MushRoom();
+    }
+
+    @Override
+    Vehicle createVehicle() {
+        return new Broom();
+    }
+
+    @Override
+    Weapon createWeapon() {
+        return new MagicStick();
+    }
+}
